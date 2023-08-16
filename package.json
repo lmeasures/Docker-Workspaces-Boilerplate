@@ -1,0 +1,27 @@
+{
+  "name": "test-root",
+  "version": "0.0.0",
+  "description": "testing shared components across react-apps with independent `src` folders using npm-workspaces",
+  "main": "index.js",
+  "workspaces": [
+    "common",
+    "react-app-a"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lee Measures",
+  "license": "ISC",
+  "dependencies": {
+    "craco-babel-loader": "^1.0.4",
+    "react-scripts":"^5.0.1"
+  },
+  "devDependencies": {
+    "babel-jest": "27.5.1"
+  },
+  "overrides":{
+    "react-scripts":{
+      "babel-jest":"^27.5.1"
+    }
+  }
+}
