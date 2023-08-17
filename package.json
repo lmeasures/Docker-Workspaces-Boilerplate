@@ -8,20 +8,23 @@
     "react-app-a"
   ],
   "scripts": {
+    "react-app-a": "npm start --workspace=react-app-a",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Lee Measures",
   "license": "ISC",
   "dependencies": {
+    "@ukic/fonts": "^2.2.0",
+    "@ukic/react": "^2.2.0",
     "craco-babel-loader": "^1.0.4",
-    "react-scripts":"^5.0.1"
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "babel-jest": "27.5.1"
   },
-  "overrides":{
-    "react-scripts":{
-      "babel-jest":"^27.5.1"
+  "overrides": {
+    "react-scripts": {
+      "babel-jest": "^27.5.1"
     }
   }
 }
