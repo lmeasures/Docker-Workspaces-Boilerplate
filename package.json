@@ -10,9 +10,7 @@
     "react-app-c"
   ],
   "scripts": {
-    "react-app-a": "npm start --workspace=react-app-a",
-    "react-app-b": "npm start --workspace=react-app-b",
-    "react-app-c": "npm start --workspace=react-app-c",
+    "app": "npm start -w ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Lee Measures",
