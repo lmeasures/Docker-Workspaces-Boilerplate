@@ -1,11 +1,9 @@
-# How do
-1: run `npm i` at the root level
-
-2: run `npm start --workspace=react-app-a`
-<br/>
-2: alternative custom run command added: `npm run react-app-a`
-
-3: click the button
+# How to run example app(s)
+- In the root directory, run: <br/>
+1: run `npm i` at the root level <br/>
+2: run `npm start --workspace=react-app-a` <br/>
+2: alternative custom run command added: `npm run react-app-a` <br/>
+3: click the button <br/>
 
 - State is being instantiated and stored within the common component `Component1`, visible within the button as a numerical value
 - State is being instantiated and stored within the parent component within `react-app-a`
@@ -29,4 +27,5 @@
 2: Copy `craco.config.js.example` from the root folder to the app directory <br/>
 3: Update the `package.json` 'scripts' section, replacing `react-scripts` with `craco` <br/>
 3.1: Leave `react-scripts eject` as it is, do not change this to `craco eject` <br/>
+
 - You can now run the app from the root level using `npm run <app-name>`
