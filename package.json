@@ -5,10 +5,14 @@
   "main": "index.js",
   "workspaces": [
     "common",
-    "react-app-a"
+    "react-app-a",
+    "react-app-b",
+    "react-app-c"
   ],
   "scripts": {
     "react-app-a": "npm start --workspace=react-app-a",
+    "react-app-b": "npm start --workspace=react-app-b",
+    "react-app-c": "npm start --workspace=react-app-c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Lee Measures",
