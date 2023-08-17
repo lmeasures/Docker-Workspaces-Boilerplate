@@ -11,7 +11,8 @@
   ],
   "scripts": {
     "app": "npm start -w ",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build -w ",
+    "test": "npm run test -w "
   },
   "author": "Lee Measures",
   "license": "ISC",
