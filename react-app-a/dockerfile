@@ -1,0 +1,17 @@
+FROM node:16.17.0
+
+
+WORKDIR /app
+
+
+COPY ./react-app-a/package.json ./react-app-a/package.json
+COPY ./common/package.json ./common/package.json
+COPY ./package.json ./
+RUN npm install
+
+
+COPY ./react-app-a ./react-app-a
+COPY ./common ./common
+
+
+CMD ["npm", "run", "app", "react-app-a"]
