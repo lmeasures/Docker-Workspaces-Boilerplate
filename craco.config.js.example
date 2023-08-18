@@ -12,5 +12,14 @@ module.exports = {
 				includes: [resolveApp('../common')],
 			},
 		},
-	],
+	], 
+	webpack:{
+		configure: {
+			watch: true, 
+			watchOptions: {
+				aggregateTimeout: 200,
+				poll: 500,
+			},
+		}
+	}
 };
