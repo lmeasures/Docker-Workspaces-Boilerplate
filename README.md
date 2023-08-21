@@ -1,9 +1,9 @@
-> # Important Notes<br/>
-> !Read these before progressing!
-> 1. The folder name of each app **must** match it's name in the `workspaces` section of the **root** level `package.json` <br/>
-> 2. The name of each app in individual app `package.json` files **must** match it's folder name
-> 3. The name of each app in `docker-compose.yaml` **must** match it's name in the `workspaces` section of the **root** level `package.json` <br/><br/>
-> This is not simply for readability, but a requirement to ensure correct functionality of NPM Workspaces when used in conjunction with docker
+# Important Notes<br/>
+!Read these before progressing!
+1. The folder name of each app **must** match it's name in the `workspaces` section of the **root** level `package.json` <br/>
+2. The name of each app in individual app `package.json` files **must** match it's folder name
+3. The name of each app in `docker-compose.yaml` **must** match it's name in the `workspaces` section of the **root** level `package.json` <br/><br/>
+This is not simply for readability, but a requirement to ensure correct functionality of NPM Workspaces when used in conjunction with docker
 
 <br/>
 
