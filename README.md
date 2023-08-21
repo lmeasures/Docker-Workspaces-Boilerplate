@@ -44,7 +44,7 @@ To set up docker functionality for the app, you must create a new `dockerfile` a
 
 > Remember to replace `<app-name>` with your new CRA's name
 
-- Create a new `dockerfile` in the app's directory, using `react-app-a` as a template:
+- Create a new `dockerfile` in the app's directory, using `react-app-a`'s as a template:
 ``` dockerfile
 FROM node:latest
 
