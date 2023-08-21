@@ -13,6 +13,7 @@ This is not simply for readability, but a requirement to ensure correct function
   - `<app-name>` as defined in the `docker-compose.yaml` file in `root` <br/>
 ![Showing location of app name in docker-compose yaml](./docs/react-app-a-docker-compose.png)
   - For example: `docker-compose up --build react-app-a`
+- Once completed, react-app-a should be running on <http://localhost:3000>
 
 ### Without Docker
 - In the root directory, run: <br/>
