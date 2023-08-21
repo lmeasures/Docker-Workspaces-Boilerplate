@@ -10,9 +10,9 @@ This is not simply for readability, but a requirement to ensure correct function
 # First Time Setup
 ### With Docker
 - In the root directory, run `docker-compose up --build <app-name>`
-- `<app-name>` as defined in the `docker-compose.yaml` file in `root` <br/>
+  - `<app-name>` as defined in the `docker-compose.yaml` file in `root` <br/>
 ![Showing location of app name in docker-compose yaml](./docs/react-app-a-docker-compose.png)
-- For example: `docker-compose up --build react-app-a`
+  - For example: `docker-compose up --build react-app-a`
 
 ### Without Docker
 - In the root directory, run: <br/>
