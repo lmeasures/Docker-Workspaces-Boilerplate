@@ -115,11 +115,8 @@ services:
 - Containerised development environment using Docker
 - Dockerignore file to reduce context transfer load
 <br/>
-
-- NPM packages installed in the root package.json are visible to all workspaces under it's umbrella
-- NPM packages installed in individual workspace package.jsons are visible to only that workspace
-  
-<br/>
+- NPM packages installed in the root package.json are visible to all workspaces under it's umbrella <br/>
+- NPM packages installed in individual workspace package.jsons are visible to only that workspace <br/>
 
 # What's in this as a Proof of Concept?
 
