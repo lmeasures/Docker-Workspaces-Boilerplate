@@ -102,7 +102,12 @@ services:
       - ./common:/app/common
 ```
 
+
 ### Api Setup (TODO)
+1. Create a new folder inside the `apps` directory, giving it the name of the new api you are creating, `<app-name>` (i.e. "express-api-a") 
+2. Initialise a new NPM package using `npm init`, ensuring that the `package-name`
+
+
 ### DB Setup (TODO)
 
 # What's in this boilerplate?

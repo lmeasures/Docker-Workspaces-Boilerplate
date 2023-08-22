@@ -1,0 +1,15 @@
+FROM node:16.17.0
+
+WORKDIR /app
+
+COPY ./example-app-name/package.json ./example-app-name/package.json
+COPY ./@csl/interfaces/package.json ./@csl/interfaces/package.json
+COPY ./@csl/functions/package.json ./@csl/functions/package.json
+COPY ./package.json ./
+
+RUN npm install
+
+COPY ./example-app-name/src/ ./example-app-name/src/
+COPY ./@csl ./@csl
+
+CMD ["npm", "run", "app", "example-app-name"]

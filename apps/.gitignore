@@ -1,1 +1,3 @@
 node_modules
+**/template_express_api/package-lock.json
+**/template_react_app/package-lock.json

@@ -1,0 +1,13 @@
+example-app-name:
+  container_name: example-app-name
+  build:
+    context: .
+    dockerfile: ./example-app-name/dockerfile
+  image: example-app-name:latest
+  networks:
+    - workspaces
+  ports:
+    - 3001:3001 # replace this port
+  volumes:
+    - ./example-app-name:/app/example-app-name
+    - ./@csl:/app/@csl
