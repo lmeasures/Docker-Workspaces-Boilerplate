@@ -8,16 +8,16 @@ COPY ./react-app-a/craco.config.js ./react-app-a/craco.config.js
 COPY ./react-app-a/tsconfig.json ./react-app-a/tsconfig.json
 COPY ./react-app-a/package.json ./react-app-a/package.json
 
-COPY ./@roc/components/package.json ./@roc/components/package.json
-COPY ./@roc/interfaces/package.json ./@roc/interfaces/package.json
-COPY ./@roc/functions/package.json ./@roc/functions/package.json
+COPY ./@csl/components/package.json ./@csl/components/package.json
+COPY ./@csl/interfaces/package.json ./@csl/interfaces/package.json
+COPY ./@csl/functions/package.json ./@csl/functions/package.json
 
 COPY ./package.json ./
 RUN npm install
 
 
 COPY ./react-app-a/src ./react-app-a/src
-COPY ./@roc ./@roc
+COPY ./@csl ./@csl
 
 
 CMD ["npm", "run", "app", "react-app-a"]

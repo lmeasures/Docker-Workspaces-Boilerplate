@@ -16,7 +16,7 @@ services:
       - 3001:3001
     volumes:
       - ./express-api-a:/app/express-api-a
-      - ./@roc:/app/@roc
+      - ./@csl:/app/@csl
   react-app-a:
     build:
       context: .
@@ -31,4 +31,4 @@ services:
       - workspaces
     volumes: 
       - ./react-app-a:/app/react-app-a
-      - ./@roc:/app/@roc
+      - ./@csl:/app/@csl

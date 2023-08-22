@@ -9,15 +9,15 @@ COPY ./express-api-a/nodemon.json ./express-api-a/nodemon.json
 COPY ./express-api-a/tsconfig.json ./express-api-a/tsconfig.json
 
 COPY ./express-api-a/package.json ./express-api-a/package.json
-COPY ./@roc/components/package.json ./@roc/components/package.json
-COPY ./@roc/interfaces/package.json ./@roc/interfaces/package.json
-COPY ./@roc/functions/package.json ./@roc/functions/package.json
+COPY ./@csl/components/package.json ./@csl/components/package.json
+COPY ./@csl/interfaces/package.json ./@csl/interfaces/package.json
+COPY ./@csl/functions/package.json ./@csl/functions/package.json
 COPY ./package.json ./
 
 RUN npm install
 
 COPY ./express-api-a/src/ ./express-api-a/src/
-COPY ./@roc ./@roc
+COPY ./@csl ./@csl
 
 
 CMD ["npm", "run", "app", "express-api-a"]

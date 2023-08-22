@@ -4,9 +4,9 @@
   "description": "testing shared components across react-apps with independent `src` folders using npm-workspaces",
   "main": "index.js",
   "workspaces": [
-    "@roc/components",
-    "@roc/functions",
-    "@roc/interfaces",
+    "@csl/components",
+    "@csl/functions",
+    "@csl/interfaces",
     "react-app-a",
     "express-api-a"
   ],
