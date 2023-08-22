@@ -2,14 +2,7 @@ FROM node:16.17.0
 
 WORKDIR /app
 
-RUN npm i -g nodemon
-RUN npm i -g ts-node
-
-COPY ./express-api-a/nodemon.json ./express-api-a/nodemon.json
-COPY ./express-api-a/tsconfig.json ./express-api-a/tsconfig.json
-
 COPY ./express-api-a/package.json ./express-api-a/package.json
-COPY ./@csl/components/package.json ./@csl/components/package.json
 COPY ./@csl/interfaces/package.json ./@csl/interfaces/package.json
 COPY ./@csl/functions/package.json ./@csl/functions/package.json
 COPY ./package.json ./
@@ -19,8 +12,4 @@ RUN npm install
 COPY ./express-api-a/src/ ./express-api-a/src/
 COPY ./@csl ./@csl
 
-
 CMD ["npm", "run", "app", "express-api-a"]
-
-# cleanup, trim down
-# separate out common stuff into individual libraries to avoid react attempting to run on the api :rolling-eyes:
