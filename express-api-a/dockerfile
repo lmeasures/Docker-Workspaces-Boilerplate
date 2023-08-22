@@ -1,0 +1,26 @@
+FROM node:16.17.0
+
+WORKDIR /app
+
+RUN npm i -g nodemon
+RUN npm i -g ts-node
+
+COPY ./express-api-a/nodemon.json ./express-api-a/nodemon.json
+COPY ./express-api-a/tsconfig.json ./express-api-a/tsconfig.json
+
+COPY ./express-api-a/package.json ./express-api-a/package.json
+COPY ./@roc/components/package.json ./@roc/components/package.json
+COPY ./@roc/interfaces/package.json ./@roc/interfaces/package.json
+COPY ./@roc/functions/package.json ./@roc/functions/package.json
+COPY ./package.json ./
+
+RUN npm install
+
+COPY ./express-api-a/src/ ./express-api-a/src/
+COPY ./@roc ./@roc
+
+
+CMD ["npm", "run", "app", "express-api-a"]
+
+# cleanup, trim down
+# separate out common stuff into individual libraries to avoid react attempting to run on the api :rolling-eyes:

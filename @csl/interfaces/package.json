@@ -1,7 +1,7 @@
 {
-  "name": "common",
+  "name": "@csl/interfaces",
   "version": "1.0.0",
-  "description": "common components and functionality to be used across the repo",
+  "description": "common stuff library interfaces",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

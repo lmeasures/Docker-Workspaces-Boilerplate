@@ -4,13 +4,14 @@
   "description": "testing shared components across react-apps with independent `src` folders using npm-workspaces",
   "main": "index.js",
   "workspaces": [
-    "common",
+    "@roc/components",
+    "@roc/functions",
+    "@roc/interfaces",
     "react-app-a",
-    "react-app-b",
-    "react-app-c"
+    "express-api-a"
   ],
   "scripts": {
-    "app": "npm start -w ",
+    "app": "npm run start -w ",
     "build": "npm run build -w ",
     "test": "npm run test -w "
   },

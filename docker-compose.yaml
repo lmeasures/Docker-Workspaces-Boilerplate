@@ -4,6 +4,19 @@ networks:
   workspaces:
 
 services:
+  express-api-a:
+    container_name: express-api-a
+    build:
+      context: .
+      dockerfile: ./express-api-a/dockerfile
+    image: express-api-a:latest
+    networks:
+      - workspaces
+    ports:
+      - 3001:3001
+    volumes:
+      - ./express-api-a:/app/express-api-a
+      - ./@roc:/app/@roc
   react-app-a:
     build:
       context: .
@@ -18,4 +31,4 @@ services:
       - workspaces
     volumes: 
       - ./react-app-a:/app/react-app-a
-      - ./common:/app/common
+      - ./@roc:/app/@roc
