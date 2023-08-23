@@ -1,8 +1,15 @@
-app_name=$1 # Takes first word after command as parameter
-docker_compose_original=$(yq . ./docker-compose.yaml)
-root_package_original=$(jq . ./package.json)
-echo "Backing up original files"
+if [ $# -eq 0 ]
+then 
+    echo "No name provided, please provide name after command: 'npm run create <app-name>'"
+    exit 1; 
+fi
+
 (
+    app_name=$1 # Takes first word after command as parameter
+
+    echo "Backing up original files"
+    docker_compose_original=$(yq . ./docker-compose.yaml)
+    root_package_original=$(jq . ./package.json)
 
     echo "Creating new app directory"
     mkdir ./$app_name #create new directory using user input app name
