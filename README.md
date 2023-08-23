@@ -1,5 +1,7 @@
 # Codeshare POC w/ Docker and Scripted Automation
 
+> Additional information is available in `./apps/README.md`, relating specifically to the creating and running of apps within this monorepo
+
 ## What's in this boilerplate?
 - Example Common library
 - Example CRA React Apps
