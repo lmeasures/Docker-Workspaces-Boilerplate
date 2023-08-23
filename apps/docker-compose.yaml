@@ -1,8 +1,6 @@
 version: "3.8"
-
 networks:
   workspaces:
-
 services:
   express-api-a:
     container_name: express-api-a
@@ -16,7 +14,8 @@ services:
       - 3001:3001
     volumes:
       - ./express-api-a:/app/express-api-a
-      - ./@csl:/app/@csl
+      - ./@csl/functions:/app/@csl/functions
+      - ./@csl/interfaces:/app/@csl/interfaces
   react-app-a:
     build:
       context: .
@@ -29,6 +28,6 @@ services:
       - 3000
     networks:
       - workspaces
-    volumes: 
+    volumes:
       - ./react-app-a:/app/react-app-a
       - ./@csl:/app/@csl

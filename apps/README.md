@@ -1,3 +1,4 @@
+
 # Important Notes<br/>
 !Read these before progressing!
 1. The folder name of each app **must** match it's name in the `workspaces` section of the **root** level `package.json` <br/>
@@ -7,7 +8,7 @@ This is not simply for readability, but a requirement to ensure correct function
 
 <br/>
 
-# First Time Setup
+# Running Apps
 ### With Docker
 - In the root directory, run `docker-compose up --build <app-name>`
   - `<app-name>` as defined in the `docker-compose.yaml` file in `root` <br/>
@@ -20,10 +21,16 @@ This is not simply for readability, but a requirement to ensure correct function
 1: run `npm i` at the root level <br/>
 2: run `npm start --workspace=react-app-a` <br/>
 2: alternative custom run command added: `npm run app <app-name>` <br/>
+<br/>
 
+# Creating a new app
+1. `cd` into the `./apps` directory
+2. Run `npm run create <app-name>`, replacing `<app-name>` with the name of your new app. <br/>
+After completing, your new app will be ready to run using `docker-compose up --build <app-name>` or `npm run app <app-name>`
+<br/>
 
-# Adding a New App
-### Create React App Setup
+# Manually Creating a New App (Obsolete)
+### Create React App Setup (Obsolete)
 At **root** level: <br/>
 1: Run `npx create-react-app <app-name> --template="typescript"` <br/>
 2: Run `npm init -w <app-name>` <br/>
@@ -102,32 +109,6 @@ services:
       - ./common:/app/common
 ```
 
+### Api Setup (Obsolete)
 
-### Api Setup (TODO)
-1. Create a new folder inside the `apps` directory, giving it the name of the new api you are creating, `<app-name>` (i.e. "express-api-a") 
-2. Initialise a new NPM package using `npm init`, ensuring that the `package-name`
-
-
-### DB Setup (TODO)
-
-# What's in this boilerplate?
-- Example Common library
-- Example CRA React Apps
-- ((Example API)) TODO
-- ((Example MongoDB)) TODO
-- Code sharing across apps using NPM Workspaces & Craco
-  - Craco provides ability to resolve directories outside of each CRA's src directory.
-- Containerised development environment using Docker
-- Dockerignore file to reduce context transfer load
-<br/>
-- NPM packages installed in the root package.json are visible to all workspaces under it's umbrella <br/>
-- NPM packages installed in individual workspace package.jsons are visible to only that workspace <br/>
-
-# What's in this as a Proof of Concept?
-
-- State is being instantiated and stored within the common component `Component1`, visible within the button as a numerical value
-- State is being instantiated and stored within the parent component within `react-app-a`
-  - `react-app-a`'s state is being passed into common component as a value, along with it's dispatch action
-  - `Component1` uses the dispatch action as a callback to modify the value of `react-app-a`'s state, using the state value passed into it
-- Docker container environment(s) setup with hot-reloading
-  - context minimalisation included to reduce load on builds and build times
+### DB Setup (Obsolete)
