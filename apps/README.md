@@ -110,5 +110,3 @@ services:
 ```
 
 ### Api Setup (Obsolete)
-
-### DB Setup (Obsolete)

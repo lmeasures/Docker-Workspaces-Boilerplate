@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
 
-import { Component1 } from '../../@csl/components';
-import { sum } from '../../@csl/functions';
-import { ComplexDataType } from '../../@csl/interfaces';
+import { Component1 } from '@csl/components';
+import { sum } from '@csl/functions'
+import { ComplexDataType } from '@csl/interfaces';
 
 import { IcChip } from '@ukic/react';
 import { Button } from '@mui/material';

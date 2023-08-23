@@ -7,9 +7,8 @@ echo "Backing up original files"
     echo "Creating new app directory"
     mkdir ./$app_name
     echo "-------------------------------"
-    echo "Is this a React or Express app?"
+    echo "Is this a React or Express app? [react/express]" 
     read app_type #read user input
-    app_type="${app_type,,}" # Set to lowercase
 
     if [ "$app_type" != "react" ] && [ "$app_type" != "express" ] 
     then
@@ -17,7 +16,7 @@ echo "Backing up original files"
         rm -r ./$app_name
         exit
     else
-        if [ "${app_type}" == "express" ]
+        if [ "$app_type" = "express" ]
         then 
             echo "Creating Express Api from template"
             cp -r ../scripts/template_express_api/. "./${app_name}/."

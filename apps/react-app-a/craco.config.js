@@ -9,7 +9,7 @@ module.exports = {
 		{
 			plugin: require('craco-babel-loader'),
 			options: {
-				includes: [resolveApp('../@roc')],
+				includes: [resolveApp('../@csl')],
 			},
 		},
 	], 
