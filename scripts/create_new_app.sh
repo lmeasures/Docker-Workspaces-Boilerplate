@@ -1,7 +1,22 @@
 if ! command -v yq &> /dev/null
 then
-    echo "YQ is not installed, please install YQ before running this command"
+    echo "YQ is not installed, please install YQ before running this script"
     echo "Additional information can be found in the './scripts/create_new_app-README.md' file."
+    exit 1;
+fi
+if ! command -v jq &> /dev/null
+then
+    echo "JQ is not installed, please install JQ before running this script"
+    exit 1;
+fi
+if ! command -v npm &> /dev/null
+then
+    echo "npm is not installed, please install npm before running this script"
+    exit 1;
+fi
+if ! command -v node &> /dev/null
+then
+    echo "node is not installed, please install node before running this script"
     exit 1;
 fi
 
