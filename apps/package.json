@@ -14,7 +14,7 @@
     "app": "npm run start -w ",
     "build": "npm run build -w ",
     "test": "npm run test -w ",
-    "create": "../scripts/create_new_app.sh"
+    "create": "sh ../scripts/create_new_app.sh"
   },
   "author": "Lee Measures",
   "license": "ISC",
