@@ -1,3 +1,10 @@
+if ! command -v yq &> /dev/null
+then
+    echo "YQ is not installed, please install YQ before running this command"
+    echo "Additional information can be found in the './scripts/create_new_app-README.md' file."
+    exit 1;
+fi
+
 if [ $# -eq 0 ]
 then 
     echo "No name provided, please provide name after command: 'npm run create <app-name>'"
