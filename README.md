@@ -14,7 +14,7 @@
 - NPM packages installed in the root package.json are visible to all workspaces under it's umbrella <br/>
 - NPM packages installed in individual workspace package.jsons are visible to only that workspace <br/>
 <br/>
-- Automated app creation for Express APIs and React Apps
+- Automated app creation for Express APIs and React Apps using templates
   - Including setup of dockerfiles, workspaces, docker-compose and installations
 
 
