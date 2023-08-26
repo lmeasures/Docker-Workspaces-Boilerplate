@@ -5,7 +5,7 @@
 ## What's in this boilerplate?
 - Example Common library
 - Example CRA React Apps
-- Example API TODO
+- Example API 
 - Code sharing across apps using NPM Workspaces & Craco
   - Craco provides ability to resolve directories outside of each CRA's src directory.
 - Containerised development environment using Docker
