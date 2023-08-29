@@ -1,7 +1,7 @@
 import cors from 'cors';
 import express, { Request, Response } from 'express';
 
-import  { sum }from '../../@csl/functions';
+import  { sum } from '../../@csl/functions';
 
 const app = express();
 app.use(express.json());
